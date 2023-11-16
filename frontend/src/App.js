@@ -20,7 +20,7 @@ function App() {
     )
       .then((res) => res.json())
       .then((data) => {
-        setImages([data, ...images]);
+        setImages([...images, data]);
       })
       .catch((err) => {
         console.log(err);
